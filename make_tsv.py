@@ -17,7 +17,7 @@ def md5_checksum(file_path):
             md5_hash.update(chunk)
     return md5_hash.digest()
 
-#Write file
+# Write file
 output_file = "../Cld_Cmpt/books.tsv"
 with open(output_file, mode='w') as tsv_file:
     tsv_file.write("TsvHttpData-1.0\n")
